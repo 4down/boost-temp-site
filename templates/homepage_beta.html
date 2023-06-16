@@ -51,9 +51,9 @@
     <div
       class="grid grid-cols-1 grid-rows-2 gap-y-10 lg:grid-cols-5 lg:grid-rows-1 lg:gap-y-0 lg:gap-x-10 lg:mb-10 page-container bg-gray-400 dark:bg-gray-900  bg-opacity-10 rounded-md drop-shadow-md hover:drop-shadow-[0_15px_15px_rgba(0,100,100,0.05)]"
     >
-      <div class="h-full col-span-1 flex flex-col lg:col-span-2 p-5">
+      <div class="flex flex-col col-span-1 p-5 h-full lg:col-span-2">
 
-		<h3 class="pb-2 mb-2 text-2xl text-orange capitalize border-b border-gray-300 dark:border-slate">
+		<h3 class="pb-2 mb-2 text-2xl capitalize border-b border-gray-300 text-orange dark:border-slate">
 			Libraries
 		</h3>
 
@@ -64,7 +64,7 @@
 					id="id_library"
 			>
 			  <option value="">Accumulators</option>
-			  
+
 			</select>
 			<select onchange="this.form.submit()"
 					name="category"
@@ -116,7 +116,7 @@
 
       </div>
 
-	  <div class="h-full col-span-1 flex flex-col md:mb-10 lg:col-span-3 p-5">
+	  <div class="flex flex-col col-span-1 p-5 h-full md:mb-10 lg:col-span-3">
 
 		<h3 class="pb-2 mb-4 text-2xl capitalize border-b border-gray-300 text-orange dark:border-slate">
 			Compiler Explorer
@@ -134,44 +134,54 @@
   {% comment %} Section 3 - News {% endcomment %}
   <div class="px-4 my-0 mx-auto md:my-4">
 
-    <div
-      class="grid grid-cols-1 grid-rows-2 gap-y-10 md:grid-cols-2 md:grid-rows-3 lg:gap-y-0 md:gap-x-10 md:mb-10 page-container bg-gray-400 dark:bg-gray-900 bg-opacity-10 rounded-md drop-shadow-md hover:drop-shadow-[0_15px_15px_rgba(0,100,100,0.05)]"
-    >
-
-		<div class="h-full col-span-1 flex flex-col md:mb-10 md:col-span-2 p-5">
-			<h3 class="pb-2 mb-2 text-2xl text-orange capitalize border-b border-gray-300 dark:border-slate">
+	<div
+		class="page-container bg-gray-400 dark:bg-gray-900 bg-opacity-10 rounded-md drop-shadow-md hover:drop-shadow-[0_15px_15px_rgba(0,100,100,0.05)] md:mb-10"
+  	>
+		<div class="p-5 w-full">
+			<h3 class="pb-2 mb-2 text-2xl capitalize border-b border-gray-300 text-orange dark:border-slate">
 				News from Boost and C++
 			</h3>
 		</div>
-		
-      <div class="h-full col-span-1 flex flex-col md:mb-10 p-5 ">
 
-		<div class="pt-6">
-            <h3 class="mb-2 text-xl">Name of Article</h3>
-            <p class="mb-3">Category | 4/5/22</p>
-            <p class="mb-3">Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum... <a href="" class="text-orange">Read&nbsp;More</a></p>
-          </div>
+	<div class="grid grid-cols-1 grid-rows-2 gap-y-10 md:grid-cols-2 md:grid-rows-1 md:gap-x-10 lg:gap-y-0">
 
 
-		
+		<div class="flex flex-col col-span-1 p-5 h-full border-gray-200 md:mb-10 dark:border-slate">
 
-		
+			<div class="">
+				<h3 class="mb-2 text-xl">Name of Article</h3>
+				<p class="mb-3">Category | 4/5/22</p>
+				<p class="mb-3">Boost.MySQL is an Asio-based network client which lets you access MySQL
+					and MariaDB databases using your own data types New in Boost 1.82.0,
+					check it out here https://https://boost.org/libs/mysql Get Boost:
+					https://boost.org/users/history/version_1_82_0.html #boost #cpp
+					#cplusplus #mysql #mariadb #database... <a href="" class="text-sky-600">Read&nbsp;More</a></p>
 
-      </div>
+				<img src="{% static 'img/fpo/news-1.png' %}" class="news-image" />
+			</div>
+			</div>
 
-	  <div class="h-full col-span-1 flex flex-col md:mb-10 p-5">
+		<div class="flex flex-col col-span-1 p-5 h-full md:mb-10">
 
-		<div class="pt-6">
-            <h3 class="mb-2 text-xl">Name of Article</h3>
-            <p class="mb-3">Category | 4/5/22</p>
-            <p class="mb-3">Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum... <a href="" class="text-orange">Read&nbsp;More</a></p>
-          </div>
-		
-      </div>
+			<div class="">
+				<h3 class="mb-2 text-xl">Name of Article</h3>
+				<p class="mb-3">Category | 4/5/22</p>
+				<p class="mb-3">Boost 1.82.0 is released for the Spring season! Release Notes:
+					https://boost.org/users/history/version_1_82_0.html Downloads:
+					http://boost.org/users/news/version_1.82.0 Direct Download:
+					https://boostorg.jfrog.io/artifactory/main/release/1.82.0 #boost #cpp
+					#cplusplus <a href="" class="text-sky-600">Read&nbsp;More</a></p>
 
-    </div>
+					<img src="{% static 'img/fpo/news-2.png' %}" class="news-image" />
+			</div>
 
-  </div>
+		</div>
+
+		</div>
+
+  	</div>
+
+</div>
 
 
 	<div class="flex justify-center">
@@ -180,33 +190,7 @@
 		</div>
 	</div>
 
- 
-  <!---------- SECTION - 04 ------------>
 
-  <hr class="line-breaker" />
-  <h2 style="margin: 20px 0px">News from Boost and C++</h2>
-  <div class="section-04">
-    <div class="news-container">
-      <p class="news-text">
-        Boost.MySQL is an Asio-based network client which lets you access MySQL
-        and MariaDB databases using your own data types New in Boost 1.82.0,
-        check it out here https://https://boost.org/libs/mysql Get Boost:
-        https://boost.org/users/history/version_1_82_0.html #boost #cpp
-        #cplusplus #mysql #mariadb #database
-      </p>
-      <img src="{% static 'img/fpo/news-1.png' %}" class="news-image" />
-    </div>
-    <div class="news-container">
-      <p class="news-text">
-        Boost 1.82.0 is released for the Spring season! Release Notes:
-        https://boost.org/users/history/version_1_82_0.html Downloads:
-        http://boost.org/users/news/version_1.82.0 Direct Download:
-        https://boostorg.jfrog.io/artifactory/main/release/1.82.0 #boost #cpp
-        #cplusplus
-      </p>
-      <img src="{% static 'img/fpo/news-2.png' %}" class="news-image" />
-    </div>
-  </div>
 
   <!---------- SECTION - 05 ------------>
 
